@@ -16,16 +16,21 @@ using System.Windows.Shapes;
 namespace Submission_of_Applications_Klimov.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для Statement.xaml
+    /// Логика взаимодействия для Education.xaml
     /// </summary>
-    public partial class Statement : Page
+    public partial class Education : Page
     {
-        public Statement()
+        public Education()
         {
             InitializeComponent();
         }
 
         private void Next(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ChooseImage(object sender, RoutedEventArgs e)
         {
 
         }

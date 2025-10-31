@@ -27,7 +27,7 @@ namespace Submission_of_Applications_Klimov.Pages
 
         private void Next(object sender, RoutedEventArgs e)
         {
-
+            NavigationService.Navigate(new Education());
         }
     }
 }

@@ -16,9 +16,25 @@ namespace Submission_of_Applications_Klimov
     /// </summary>
     public partial class MainWindow : Window
     {
+
         public MainWindow()
         {
             InitializeComponent();
+            OpenStartPage(pages.statement);
         }
+
+        public enum pages
+        {
+            statement
+        }
+
+        public void OpenStartPage(pages _page)
+        {
+            if (_page == pages.statement)
+            {
+                frame.Navigate(new Pages.Statement());
+            }
+        }
+
     }
 }

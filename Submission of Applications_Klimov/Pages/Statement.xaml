@@ -5,11 +5,11 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Submission_of_Applications_Klimov.Pages"
       mc:Ignorable="d" 
-      d:DesignHeight="410" d:DesignWidth="792"
+      Height="490" Width="840" MinHeight="490" MinWidth="840"
       Title="Statement">
 
     <Grid Background="#F8F9FA">
-        <Grid Margin="0,0,0,349" Background="White">
+        <Grid Margin="0,0,0,429" Background="White">
             <Image HorizontalAlignment="Left" Height="40" Margin="10,10,0,0" VerticalAlignment="Top"
                    Width="40" Source="/Images/aviat.png"/>
             <Label Content="Пермского авиационного техникума им. А.Д. Швецова" HorizontalAlignment="Left"
@@ -17,18 +17,18 @@
             <Label Content="Электронная приемная компания" HorizontalAlignment="Left" Margin="55,1,0,0"
                    VerticalAlignment="Top" FontWeight="Bold" FontSize="19"/>
         </Grid>
-        <Grid Margin="0,60,0,0">
+        <Grid Margin="0,66,0,0">
             <Label Content="Заявление" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
             <Label Content="Прошу принять меня в КГАПОУ Пермский авиационный техникум им. А.Д. Швецова" HorizontalAlignment="Left" 
                    Margin="10,41,0,0" VerticalAlignment="Top"/>
             <Label Content="Выберите один из вариантов:" HorizontalAlignment="Left" Background="{x:Null}" FontSize="10"
                    Margin="20,67,0,0" VerticalAlignment="Top" Foreground="Red"/>
-            <CheckBox Content="по очной форме обучения" HorizontalAlignment="Left" Margin="22,91,0,0" VerticalAlignment="Top"/>
-            <CheckBox Content="по заочной форме обучения (обучение только на платной основе)" HorizontalAlignment="Left" Margin="22,106,0,0" VerticalAlignment="Top"/>
+            <RadioButton Content="по очной форме обучения" HorizontalAlignment="Left" Margin="22,91,0,0" VerticalAlignment="Top" GroupName="FormEducate"/>
+            <RadioButton Content="по заочной форме обучения (обучение только на платной основе)" HorizontalAlignment="Left" Margin="22,106,0,0" VerticalAlignment="Top" GroupName="FormEducate"/>
             <Label Content="Выберите один из вариантов:" HorizontalAlignment="Left" Background="{x:Null}" FontSize="10"
                    Margin="20,126,0,0" VerticalAlignment="Top" Foreground="Red"/>
-            <CheckBox Content="за счёт бюджета" HorizontalAlignment="Left" Margin="22,165,0,0" VerticalAlignment="Top"/>
-            <CheckBox Content="по договору (платно)" HorizontalAlignment="Left" Margin="22,150,0,0" VerticalAlignment="Top"/>
+            <RadioButton Content="за счёт бюджета" HorizontalAlignment="Left" Margin="22,165,0,0" VerticalAlignment="Top" GroupName="FormPrice"/>
+            <RadioButton Content="по договору (платно)" HorizontalAlignment="Left" Margin="22,150,0,0" VerticalAlignment="Top" GroupName="FormPrice"/>
             <Label Content="О себе сообщаю следующее:" HorizontalAlignment="Left" Margin="10,185,0,0" VerticalAlignment="Top"/>
             <Label Content="Окончил (Наименование образовательной организации, город)" HorizontalAlignment="Left" Margin="10,211,0,0" VerticalAlignment="Top"/>
             <TextBox x:Name="OrganizationName" Height="24" Margin="12,237,10,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>

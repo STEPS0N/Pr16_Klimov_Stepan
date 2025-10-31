@@ -5,7 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Submission_of_Applications_Klimov.Pages"
       mc:Ignorable="d" 
-      Height="612" Width="840" MinHeight="584" MinWidth="840"
+      Height="612" Width="840" MinHeight="612" MinWidth="840"
       Title="Speciality">
 
     <Grid Background="#F8F9FA">

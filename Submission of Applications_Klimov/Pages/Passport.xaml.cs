@@ -16,18 +16,23 @@ using System.Windows.Shapes;
 namespace Submission_of_Applications_Klimov.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для Speciality.xaml
+    /// Логика взаимодействия для Passport.xaml
     /// </summary>
-    public partial class Speciality : Page
+    public partial class Passport : Page
     {
-        public Speciality()
+        public Passport()
         {
             InitializeComponent();
         }
 
         private void Next(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Passport());
+
+        }
+
+        private void ChooseImage(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

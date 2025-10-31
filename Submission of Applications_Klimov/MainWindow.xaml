@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Submission_of_Applications_Klimov"
         mc:Ignorable="d"
-        Title="Подача заявлений" SizeToContent="WidthAndHeight">
+        Title="Подача заявлений" Height="490" Width="840" MinHeight="490" MinWidth="840" SizeToContent="WidthAndHeight">
     <Grid>
         <Frame x:Name="frame" NavigationUIVisibility="Hidden"/>
     </Grid>

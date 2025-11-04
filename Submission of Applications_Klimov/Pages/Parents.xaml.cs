@@ -16,18 +16,13 @@ using System.Windows.Shapes;
 namespace Submission_of_Applications_Klimov.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для Contacts.xaml
+    /// Логика взаимодействия для Parents.xaml
     /// </summary>
-    public partial class Contacts : Page
+    public partial class Parents : Page
     {
-        public Contacts()
+        public Parents()
         {
             InitializeComponent();
-        }
-
-        private void Next(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new Parents());
         }
     }
 }

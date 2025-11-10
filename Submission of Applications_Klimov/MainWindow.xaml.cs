@@ -16,10 +16,11 @@ namespace Submission_of_Applications_Klimov
     /// </summary>
     public partial class MainWindow : Window
     {
-
+        public static MainWindow Instance;
         public MainWindow()
         {
             InitializeComponent();
+            Instance = this;
             OpenStartPage(pages.statement);
         }
 

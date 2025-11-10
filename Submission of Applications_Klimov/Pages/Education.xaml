@@ -41,7 +41,8 @@
                    Margin="18,306,0,0" VerticalAlignment="Top" Foreground="Red"/>
             <TextBox x:Name="Link" Height="24" Margin="20,331,90,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
             <Button Content="Выбрать..." Click="ChooseImage" HorizontalAlignment="Right" Margin="0,331,10,0" VerticalAlignment="Top" Width="75" Height="25"/>
-            <Button Content="Продолжить" Click="Next" HorizontalAlignment="Right" Margin="0,0,10,5" VerticalAlignment="Bottom" Width="150" Height="25"/>
+            <Button Content="Продолжить" Click="Next" HorizontalAlignment="Right" Margin="0,0,10,10" VerticalAlignment="Bottom" Width="150" Height="25"/>
+            <Button Content="Назад" Click="Back" HorizontalAlignment="Left" Margin="10,0,0,10" VerticalAlignment="Bottom" Width="150" Height="25"/>
         </Grid>
     </Grid>
 </Page>

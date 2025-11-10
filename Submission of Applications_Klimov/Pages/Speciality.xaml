@@ -5,8 +5,8 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Submission_of_Applications_Klimov.Pages"
       mc:Ignorable="d"
-      MinHeight="490" MinWidth="840"
-      Title="Speciality">
+      MinHeight="608" MinWidth="840"
+      Title="Speciality" Height="608">
 
     <Grid Background="#F8F9FA">
         <Grid Margin="0,0,0,523" Background="White">
@@ -44,7 +44,8 @@
             <RadioButton x:Name="notfirst" Content="не впервые" HorizontalAlignment="Left" Margin="20,348,0,0" VerticalAlignment="Top" GroupName="EducateFirst"/>
             <CheckBox x:Name="confone" Content="С лицензией на право осуществления образовательной деятельности, свидетельством о государственной аккредитации,&#xD;&#xA;правилами приёма и правилами внутреннего распорядка обучающихся в данном образовательном учреждении, с Уставом&#xD;&#xA;Техникума ознакомлен(а)." HorizontalAlignment="Left" Margin="22,413,0,0" VerticalAlignment="Top"/>
             <CheckBox x:Name="conftwo" Content="С датой представления оригиналов документов ознакомлен(а)" HorizontalAlignment="Left" Margin="22,476,0,0" VerticalAlignment="Top"/>
-            <Button Content="Продолжить" Click="Next" HorizontalAlignment="Right" Margin="0,0,10,5" VerticalAlignment="Bottom" Width="150" Height="25"/>
+            <Button Content="Продолжить" Click="Next" HorizontalAlignment="Right" Margin="0,0,10,10" VerticalAlignment="Bottom" Width="150" Height="25"/>
+            <Button Content="Назад" Click="Back" HorizontalAlignment="Left" Margin="10,0,0,10" VerticalAlignment="Bottom" Width="150" Height="25"/>
         </Grid>
     </Grid>
 </Page>

@@ -28,7 +28,8 @@
             <Label Content="Электронный адрес:" HorizontalAlignment="Left" 
                Margin="10,101,0,0" VerticalAlignment="Top"/>
             <TextBox x:Name="tb_EmailAddress" Height="24" Width="820" Margin="0,132,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" HorizontalAlignment="Center"/>
-            <Button Content="Продолжить" Click="Next" HorizontalAlignment="Right" Margin="0,0,10,5" VerticalAlignment="Bottom" Width="150" Height="25"/>
+            <Button Content="Продолжить" Click="Next" HorizontalAlignment="Right" Margin="0,0,10,10" VerticalAlignment="Bottom" Width="150" Height="25"/>
+            <Button Content="Назад" Click="Back" HorizontalAlignment="Left" Margin="10,0,0,10" VerticalAlignment="Bottom" Width="150" Height="25"/>
         </Grid>
     </Grid>
 </Page>

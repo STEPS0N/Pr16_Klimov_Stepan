@@ -54,5 +54,10 @@ namespace Submission_of_Applications_Klimov.Pages
                 MessageBox.Show("Выберите хотя бы одну специальность!");
             }
         }
+
+        private void Back(object sender, RoutedEventArgs e)
+        {
+            NavigationService.GoBack();
+        }
     }
 }

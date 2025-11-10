@@ -95,5 +95,10 @@ namespace Submission_of_Applications_Klimov.Pages
                 Link.Text = selectedFile;
             }
         }
+
+        private void Back(object sender, RoutedEventArgs e)
+        {
+            NavigationService.GoBack();
+        }
     }
 }

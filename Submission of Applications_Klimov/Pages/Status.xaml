@@ -5,7 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Submission_of_Applications_Klimov.Pages"
       mc:Ignorable="d" 
-      Height="490" Width="840" MinHeight="490" MinWidth="840"
+      MinHeight="490" MinWidth="840"
       Title="Status">
 
     <Grid Background="#F8F9FA">
@@ -23,15 +23,15 @@
                Margin="10,41,0,0" VerticalAlignment="Top"/>
             <Label Content="Отметить при наличии" HorizontalAlignment="Left" Background="{x:Null}" FontSize="10"
                Margin="20,67,0,0" VerticalAlignment="Top" Foreground="Red"/>
-            <CheckBox Content="ребёнок-сирота/ребёнок, оставшийся без попечения родителей" HorizontalAlignment="Left" Margin="22,91,0,0" VerticalAlignment="Top"/>
-            <CheckBox Content="инвалид" HorizontalAlignment="Left" Margin="22,106,0,0" VerticalAlignment="Top"/>
-            <CheckBox Content="малообеспеченный" HorizontalAlignment="Left" Margin="22,120,0,0" VerticalAlignment="Top"/>
+            <CheckBox x:Name="child" Content="ребёнок-сирота/ребёнок, оставшийся без попечения родителей" HorizontalAlignment="Left" Margin="22,91,0,0" VerticalAlignment="Top"/>
+            <CheckBox x:Name="inval" Content="инвалид" HorizontalAlignment="Left" Margin="22,106,0,0" VerticalAlignment="Top"/>
+            <CheckBox x:Name="malob" Content="малообеспеченный" HorizontalAlignment="Left" Margin="22,120,0,0" VerticalAlignment="Top"/>
             <Label Content="Приписное удостоверение (военный билет):" HorizontalAlignment="Left" 
                    Margin="10,140,0,0" VerticalAlignment="Top"/>
             <Label Content="Выберите один из вариантов:" HorizontalAlignment="Left" Background="{x:Null}" FontSize="10"
                Margin="20,168,0,0" VerticalAlignment="Top" Foreground="Red"/>
-            <RadioButton Content="не имею" HorizontalAlignment="Left" Margin="20,206,0,0" VerticalAlignment="Top" GroupName="IDCard"/>
-            <RadioButton Content="имею (при нажатии данной кнопки необходимо ниже прикрепить сканы страниц документа)" HorizontalAlignment="Left" Margin="20,191,0,0" VerticalAlignment="Top" GroupName="IDCard"/>
+            <RadioButton x:Name="nothave" Content="не имею" HorizontalAlignment="Left" Margin="20,206,0,0" VerticalAlignment="Top" GroupName="IDCard"/>
+            <RadioButton x:Name="have" Content="имею (при нажатии данной кнопки необходимо ниже прикрепить сканы страниц документа)" HorizontalAlignment="Left" Margin="20,191,0,0" VerticalAlignment="Top" GroupName="IDCard"/>
             <Label Content="Прикрепите сканы 1-ой и 2-ой страниц приписного удостоверения или военного билета (стр. 1-5, 8-13, 20-21) при их наличии" HorizontalAlignment="Left" Margin="10,231,0,0" VerticalAlignment="Top"/>
             <Label Content="(Формат документов должен быть PNG, JPEG, или PDF, а максимальный размер каждого файла 5 МБ)" HorizontalAlignment="Left" Background="{x:Null}" FontSize="10"
                    Margin="20,262,0,0" VerticalAlignment="Top" Foreground="Red"/>

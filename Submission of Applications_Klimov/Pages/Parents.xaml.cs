@@ -24,5 +24,10 @@ namespace Submission_of_Applications_Klimov.Pages
         {
             InitializeComponent();
         }
+
+        private void Next(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

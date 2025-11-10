@@ -4,7 +4,7 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Submission_of_Applications_Klimov.Pages"
-      Height="1057" Width="840" MinHeight="1057" MinWidth="840"
+      MinHeight="490" MinWidth="840"
       Title="Parents">
 
     <Grid Background="#F8F9FA">

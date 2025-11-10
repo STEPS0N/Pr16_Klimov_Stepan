@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Submission_of_Applications_Klimov.RegexС;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -27,7 +28,31 @@ namespace Submission_of_Applications_Klimov.Pages
 
         private void Next(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Passport());
+            if (one.IsChecked == true || two.IsChecked == true || three.IsChecked == true || four.IsChecked == true ||
+                five.IsChecked == true || six.IsChecked == true || seven.IsChecked == true || eight.IsChecked == true ||
+                nine.IsChecked == true || ten.IsChecked == true || eleven.IsChecked == true || twelve.IsChecked == true ||
+                thirteen.IsChecked == true)
+            {
+                if (first.IsChecked == true || notfirst.IsChecked == true)
+                {
+                    if (confone.IsChecked == true && conftwo.IsChecked == true)
+                    {
+                        NavigationService.Navigate(new Passport());
+                    }
+                    else
+                    {
+                        MessageBox.Show("Подтвердите что ознакомлены с документами!");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Впервые ли получаете среднее профессиональное образование?");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Выберите хотя бы одну специальность!");
+            }
         }
     }
 }

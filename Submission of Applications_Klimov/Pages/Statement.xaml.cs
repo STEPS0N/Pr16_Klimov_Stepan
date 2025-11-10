@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Submission_of_Applications_Klimov.RegexС;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,11 +24,39 @@ namespace Submission_of_Applications_Klimov.Pages
         public Statement()
         {
             InitializeComponent();
-        }
+        } 
 
         private void Next(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Education());
+            if (!string.IsNullOrEmpty(OrganizationName.Text) && Check.CheckReg(OrganizationName.Text, "^[А-Яа-яЁё0-9., ]*$"))
+            {
+                if (!string.IsNullOrEmpty(OrganizationLastDate.Text) && Check.CheckReg(OrganizationLastDate.Text, "^\\d{4}$"))
+                {
+                    if (Ochno.IsChecked == true || Zaochno.IsChecked == true)
+                    {
+                        if (Budjet.IsChecked == true || Pay.IsChecked == true)
+                        {
+                            NavigationService.Navigate(new Education());
+                        }
+                        else
+                        {
+                            MessageBox.Show("Выберите стоимость обучения!");
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Выберите форму обучения!");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Неправильно введен год окончания!");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Неправильно введено образовательное учереждение!");
+            }
         }
     }
 }

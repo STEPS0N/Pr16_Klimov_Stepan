@@ -5,8 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Submission_of_Applications_Klimov"
         mc:Ignorable="d"
-        Title="Подача заявлений" Height="490" Width="840" MinHeight="490" MinWidth="840" SizeToContent="WidthAndHeight">
+        Title="Подача заявлений" Height="600" Width="900" MinHeight="510" MinWidth="860" WindowStartupLocation="CenterScreen" SizeToContent="Manual">
     <Grid>
-        <Frame x:Name="frame" NavigationUIVisibility="Hidden"/>
+        <ScrollViewer VerticalScrollBarVisibility="Auto" 
+                  HorizontalScrollBarVisibility="Auto"
+                  PanningMode="Both">
+            <Viewbox Stretch="Uniform">
+                <ContentControl>
+                    <Frame x:Name="frame" NavigationUIVisibility="Hidden"/>
+                </ContentControl>
+            </Viewbox>
+        </ScrollViewer>
     </Grid>
 </Window>

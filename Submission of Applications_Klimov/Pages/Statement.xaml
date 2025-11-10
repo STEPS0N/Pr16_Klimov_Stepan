@@ -5,7 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Submission_of_Applications_Klimov.Pages"
       mc:Ignorable="d" 
-      Height="490" Width="840" MinHeight="490" MinWidth="840"
+      MinHeight="490" MinWidth="840"
       Title="Statement">
 
     <Grid Background="#F8F9FA">
@@ -23,18 +23,18 @@
                    Margin="10,41,0,0" VerticalAlignment="Top"/>
             <Label Content="Выберите один из вариантов:" HorizontalAlignment="Left" Background="{x:Null}" FontSize="10"
                    Margin="20,67,0,0" VerticalAlignment="Top" Foreground="Red"/>
-            <RadioButton Content="по очной форме обучения" HorizontalAlignment="Left" Margin="22,91,0,0" VerticalAlignment="Top" GroupName="FormEducate"/>
-            <RadioButton Content="по заочной форме обучения (обучение только на платной основе)" HorizontalAlignment="Left" Margin="22,106,0,0" VerticalAlignment="Top" GroupName="FormEducate"/>
+            <RadioButton x:Name="Ochno" Content="по очной форме обучения" HorizontalAlignment="Left" Margin="22,91,0,0" VerticalAlignment="Top" GroupName="FormEducate"/>
+            <RadioButton x:Name="Zaochno" Content="по заочной форме обучения (обучение только на платной основе)" HorizontalAlignment="Left" Margin="22,106,0,0" VerticalAlignment="Top" GroupName="FormEducate"/>
             <Label Content="Выберите один из вариантов:" HorizontalAlignment="Left" Background="{x:Null}" FontSize="10"
                    Margin="20,126,0,0" VerticalAlignment="Top" Foreground="Red"/>
-            <RadioButton Content="за счёт бюджета" HorizontalAlignment="Left" Margin="22,165,0,0" VerticalAlignment="Top" GroupName="FormPrice"/>
-            <RadioButton Content="по договору (платно)" HorizontalAlignment="Left" Margin="22,150,0,0" VerticalAlignment="Top" GroupName="FormPrice"/>
+            <RadioButton x:Name="Budjet"  Content="за счёт бюджета" HorizontalAlignment="Left" Margin="22,165,0,0" VerticalAlignment="Top" GroupName="FormPrice"/>
+            <RadioButton x:Name="Pay" Content="по договору (платно)" HorizontalAlignment="Left" Margin="22,150,0,0" VerticalAlignment="Top" GroupName="FormPrice"/>
             <Label Content="О себе сообщаю следующее:" HorizontalAlignment="Left" Margin="10,185,0,0" VerticalAlignment="Top"/>
             <Label Content="Окончил (Наименование образовательной организации, город)" HorizontalAlignment="Left" Margin="10,211,0,0" VerticalAlignment="Top"/>
             <TextBox x:Name="OrganizationName" Height="24" Margin="12,237,10,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
             <Label Content="Год окончания образовательной организации" HorizontalAlignment="Left" Margin="12,266,0,0" VerticalAlignment="Top"/>
             <TextBox x:Name="OrganizationLastDate" Height="24" Margin="12,291,10,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
-            <Button Content="Продолжить" Click="Next" HorizontalAlignment="Right" Margin="0,0,10,5" VerticalAlignment="Bottom" Width="150" Height="25"/>
+            <Button Content="Продолжить" Click="Next" HorizontalAlignment="Right" Margin="0,0,10,10" VerticalAlignment="Bottom" Width="150" Height="25"/>
         </Grid>
     </Grid>
 </Page>
